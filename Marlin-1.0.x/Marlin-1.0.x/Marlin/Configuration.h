@@ -118,9 +118,9 @@
 // 147 is Pt100 with 4k7 pullup
 // 110 is Pt100 with 1k pullup (non standard)
 
-#define TEMP_SENSOR_0 1
-#define TEMP_SENSOR_1 0
-#define TEMP_SENSOR_2 0
+#define TEMP_SENSOR_0 5
+#define TEMP_SENSOR_1 5
+#define TEMP_SENSOR_2 5
 #define TEMP_SENSOR_BED 0
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
@@ -493,9 +493,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402,78.7402,200.0*8/3,760*1.1}   // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {79.9999,79.9999,400,92,6462}   // default steps per unit for Lulu
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 1, 25}     // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {500,500,40,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {9000,9000,10,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000        // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000       // X, Y, Z and E max acceleration in mm/s^2 for retracts
